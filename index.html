@@ -26,11 +26,11 @@
                 <option value="prefer-not-to-say">Prefer not to say</option>
                 <option value="other">Other</option>
             </select>
-            <fieldset>
+            <fieldset class="radios">
                 <legend>Would you recommend freeCodeCamp to a friend?</legend>
-                <label for="definitely"><input type="radio" name="recommend" id="definitely" checked>Definitely</label>
-                <label for="maybe"><input type="radio" name="recommend" id="maybe">Maybe</label>
-                <label for="not-sure"><input type="radio" name="recommend" id="not-sure">Not sure</label>
+                <label for="definitely"><input type="radio" name="recommend" id="definitely" value="definitely" checked>Definitely</label>
+                <label for="maybe"><input type="radio" name="recommend" id="maybe" value="maybe">Maybe</label>
+                <label for="not-sure"><input type="radio" name="recommend" id="not-sure" value="not-sure">Not sure</label>
             </fieldset>
             <label for="favorite-feature">What is your favorite feature of freeCodeCamp?</label>
             <select name="favorite-feature" id="favorite-feature" required>
@@ -40,23 +40,22 @@
                 <option value="community">Community</option>
                 <option value="open-source">Open source</option>
             </select>
-            <fieldset>
+            <fieldset class="checkboxes">
                 <legend>What would you like to see improved? <span>(Check all that apply)</span></legend>
-                <label for="front-end"><input type="checkbox" name="improvements" id="front-end">Front-end projects</label>
-                <label for="back-end"><input type="checkbox" name="improvements" id="front-end">Back-end projects</label>
-                <label for="data-visualization"><input type="checkbox" name="improvements" id="data-visualization">Data visualization</label>
-                <label for="challenges"><input type="checkbox" name="improvements" id="challenges">Challenges</label>
-                <label for="open-source-community"><input type="checkbox" name="improvements" id="open-source-community">Open source community</label>
-                <label for="gitter-help-rooms"><input type="checkbox" name="improvements" id=gitter-help-rooms">Gitter help rooms</label>
-                <label for="videos"><input type="checkbox" name="improvements" id="videos">Videos</label>
-                <label for="city-meetups"><input type="checkbox" name="improvements" id="city-meetups">City meetups</label>
-                <label for="wiki"><input type="checkbox" name="improvements" id="wiki">Wiki</label>
-                <label for="forum"><input type="checkbox" name="improvements" id="forum">Forum</label>
-                <label for="additional courses"><input type="checkbox" name="improvements" id="additional courses">Additional courses</label>
+                <label for="front-end"><input type="checkbox" name="improvements" id="front-end"  value="front-end">Front-end projects</label>
+                <label for="back-end"><input type="checkbox" name="improvements" id="back-end" value="back-end">Back-end projects</label>
+                <label for="data-visualization"><input type="checkbox" name="improvements" id="data-visualization" value="data-visualization">Data visualization</label>
+                <label for="challenges"><input type="checkbox" name="improvements" id="challenges" value="challenges">Challenges</label>
+                <label for="open-source-community"><input type="checkbox" name="improvements" id="open-source-community" value="open-source-community">Open source community</label>
+                <label for="gitter-help-rooms"><input type="checkbox" name="improvements" id="gitter-help-rooms" value="gitter-help-rooms">Gitter help rooms</label>
+                <label for="videos"><input type="checkbox" name="improvements" id="videos" value="videos">Videos</label>
+                <label for="city-meetups"><input type="checkbox" name="improvements" id="city-meetups" value="city-meetups">City meetups</label>
+                <label for="wiki"><input type="checkbox" name="improvements" id="wiki" value="wiki">Wiki</label>
+                <label for="forum"><input type="checkbox" name="improvements" id="forum" value="forum">Forum</label>
+                <label for="additional courses"><input type="checkbox" name="improvements" id="additional courses" value="additional courses">Additional courses</label>
             </fieldset>
             <label for="comments">Any comments or suggestions?</label>
-            <textarea name="comment" id="comment" placeholder="Enter your comment here">
-            </textarea>
+            <textarea name="comment" id="comment" placeholder="Enter your comment here..."></textarea>
             <input type="submit" value="Submit">
         </form>
     </main>
